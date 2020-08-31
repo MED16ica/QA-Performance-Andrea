@@ -1,0 +1,2487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.4" jmeter="4.0">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Blazemeter test plan" enabled="true">
+      <stringProp name="TestPlan.comments">This test plan was created by the BlazeMeter converter v.2.3.17. Please contact support@blazemeter.com for further support.</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager">
+        <collectionProp name="HeaderManager.headers"/>
+      </HeaderManager>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </Arguments>
+      <hashTree/>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager">
+        <collectionProp name="AuthManager.auth_list"/>
+      </AuthManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies">
+          <elementProp name="Culture" elementType="Cookie" testname="Culture">
+            <stringProp name="Cookie.value">en</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">false</boolProp>
+            <longProp name="Cookie.expires">1598291359594</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+          <elementProp name="Unsecure" elementType="Cookie" testname="Unsecure">
+            <stringProp name="Cookie.value">F5B72D3E0D4099487CE88BA402B1D7216CF36A26C6A6AB0F6EF69678F890A7D5D6268D66619EB3CE7093D2E8C7A9F6CF1D5FCBD9EB9D6F203B1D261C7F96DF66359D00F2F305054FB137F2B3EAC4338DB0F28C01807A30A6087D4737EFE27997E7F3683FCDDB35B7B75B882B8C8449825788496329AF0FCFA68F189456589C7B227D8917F36B30243FF7FA25C2A39E4171479AEF4497886AA387BD60646C1B7B1D0F62D9EC2EA34009D945B74497F86C09D24F54076A0C97E8A006AE9BDBC1061D9E295753B2DD90C50354AFC1409B8808301DD84F787A00A6141CE87C54B7BE391FB196746A1C34CD90D43FCC6229522F3C574726615F9F586C4EB816D8C5811865CFEF0E5DE2A81C251410A5D51D12351270053B7C7EE00F2DD73460F541205D0D143A49B6753383C8BDD436C03DFFEBFFC693BCA552ABE2F380C04D8F2918CD539F93F94E32F0A05C44BE37CE7769E5BE2AA8B8396593B1AE966F3C65E8A3A6112A97851294418B8377E310C4C17ED6E7EECBAEFCB51BAAE30742CC861124042F8E332E53DEA5EA59D072DDA30652D57134CF94C0C246C14432169429431C1FC48BBBEC4DFE7A510C949E73946E40DBEE5C9647C92FE13816DFFDADB3B31534B532F0A7D223EDA063C59A586D81E88CF75C5DACC2D51144201D77F5260EE300342111B7639148B079C25BC51534826A795CB5DAAB38CDDFD3E6EDE63D3BC43CCC87B125BCD01AFECE2118FFC23952AFC8087F3EB593D1F4F102042CB6E006A0BADC526B9EA9E30E5429DF228AE6DF429635AD68BA4C10AE97464D9B980B4FC907E9C5B4A6BCF2575660A8721AC1758B153341A05B5030B555207385A6D11784CB12D6CF80D9BD7710DF67666177373FD23350A226651BF99427C35312B155850285B72BFC72C1B29253A4EC046224</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">false</boolProp>
+            <longProp name="Cookie.expires">1598291359594</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+        </collectionProp>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+        <boolProp name="clearEachIteration">true</boolProp>
+        <boolProp name="useExpires">false</boolProp>
+      </CacheManager>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <intProp name="ThreadGroup.num_threads">1</intProp>
+        <intProp name="ThreadGroup.ramp_time">1</intProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <longProp name="ThreadGroup.duration">0</longProp>
+        <longProp name="ThreadGroup.delay">0</longProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/Chart/LoadChart/1</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html, application/xhtml+xml, image/jxr, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>0.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">0.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/Chart/LoadChart/1</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html, application/xhtml+xml, image/jxr, */*</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[2]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>394.8</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">789.6</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/scripts/app/planning/scratchpad.html" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/scripts/app/planning/scratchpad.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[3]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>1933.2</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">3866.4</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/scripts/app/planning/dragdrop-manager.html" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/scripts/app/planning/dragdrop-manager.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[4]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>6.800000000000001</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">13.600000000000001</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/scripts/app/planning/planning-actions.html" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/scripts/app/planning/planning-actions.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[5]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>2.8000000000000003</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">5.6000000000000005</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/scripts/app/planning/profile.html" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/scripts/app/planning/profile.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[6]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>1.2000000000000002</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">2.4000000000000004</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/scripts/app/planning/profile-field-view.html" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/scripts/app/planning/profile-field-view.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[7]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>0.8</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">1.6</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/scripts/app/talent-grid.html" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/scripts/app/talent-grid.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">*/*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[8]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>0.4</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">0.8</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/InitChart" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;OP119HTMLPerformanceT&quot;,
+  &quot;sDevice&quot;: &quot;desktop&quot;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/InitChart</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">67</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[9]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>2260.8</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">4521.6</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/getAvailableCharts" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/getAvailableCharts</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">2</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[10]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>1057.6000000000001</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">2115.2000000000003</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/getMenuList" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;chartName&quot;: &quot;OP119HTMLPerformanceT&quot;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/getMenuList</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">42</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[11]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>4.4</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">8.8</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/GetChartInfo" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;chartName&quot;: &quot;OP119HTMLPerformanceT&quot;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/GetChartInfo</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">42</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[12]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>2.8000000000000003</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">5.6000000000000005</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/GetChartData" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;oBoxIDs&quot;: [
+    null
+  ],
+  &quot;oGroupIDs&quot;: [
+    &quot;0&quot;
+  ],
+  &quot;iLevels&quot;: 2,
+  &quot;bHighlightFilter&quot;: false,
+  &quot;bGetParentOfPartner&quot;: true,
+  &quot;bShowChainOfCommand&quot;: false
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/GetChartData</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">243</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[13]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>1240.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">2480.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/GetChartData" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;oBoxIDs&quot;: [
+    &quot;21002&quot;
+  ],
+  &quot;oGroupIDs&quot;: [
+    &quot;11&quot;
+  ],
+  &quot;iLevels&quot;: 2,
+  &quot;bHighlightFilter&quot;: false,
+  &quot;bGetParentOfPartner&quot;: true,
+  &quot;bShowChainOfCommand&quot;: false
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/GetChartData</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">247</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[14]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>6499.6</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">12999.2</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/GetChartData" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;oBoxIDs&quot;: [
+    &quot;21002&quot;
+  ],
+  &quot;oGroupIDs&quot;: [
+    &quot;11&quot;,
+    &quot;36&quot;
+  ],
+  &quot;iLevels&quot;: 2,
+  &quot;bHighlightFilter&quot;: false,
+  &quot;bGetParentOfPartner&quot;: true,
+  &quot;bShowChainOfCommand&quot;: false
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/GetChartData</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">257</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[15]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>1452.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">2904.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/Search" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sViewID&quot;: &quot;0&quot;,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;sCurrentTopBoxID&quot;: &quot;21002&quot;,
+  &quot;oSearchCriteria&quot;: {
+    &quot;FieldCriteriaList&quot;: {
+      &quot;Data&quot;: [
+        {
+          &quot;FieldDefID&quot;: &quot;FullName&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;JobTitle&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;1E33975E-DD66-44D6-ADE4-ACCD83D266A3&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;483254A4-46C9-4C5F-BF39-8DAEAE86251D&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;9D25A71A-3A96-437F-BAE9-D585D059169B&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;92A002F3-D996-4B2D-8809-3E7C4E2BA880&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;67C32BA2-3AE9-4B3B-9775-4FD59B36EA76&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;F3F175B7-3A0D-4C20-8A1B-835F53451463&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;9E1A1769-DF32-44C6-B7DE-5FB35284A50B&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;161F99E4-2F32-4954-A6ED-A5FE842A0EAB&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;F4BFFF7B-D9FC-4FDC-912D-C92D883916B8&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;2B43C981-7492-4AEC-BF73-5AA5D0ACB821&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;6B7EA60B-AFA0-44BD-96C5-2226C91BE1DF&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;Equal&quot;
+        }
+      ]
+    },
+    &quot;FilterCriteriaList&quot;: [],
+    &quot;SearchColumns&quot;: [
+      {
+        &quot;FieldDefinitionID&quot;: &quot;FullName&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;JobTitle&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;1E33975E-DD66-44D6-ADE4-ACCD83D266A3&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;483254A4-46C9-4C5F-BF39-8DAEAE86251D&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;9D25A71A-3A96-437F-BAE9-D585D059169B&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;92A002F3-D996-4B2D-8809-3E7C4E2BA880&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;67C32BA2-3AE9-4B3B-9775-4FD59B36EA76&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;F3F175B7-3A0D-4C20-8A1B-835F53451463&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;9E1A1769-DF32-44C6-B7DE-5FB35284A50B&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;161F99E4-2F32-4954-A6ED-A5FE842A0EAB&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;F4BFFF7B-D9FC-4FDC-912D-C92D883916B8&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;2B43C981-7492-4AEC-BF73-5AA5D0ACB821&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;6B7EA60B-AFA0-44BD-96C5-2226C91BE1DF&quot;,
+        &quot;Width&quot;: 80
+      }
+    ],
+    &quot;Name&quot;: &quot;&quot;
+  },
+  &quot;sPageNumber&quot;: -1,
+  &quot;sSortFieldID&quot;: &quot;FullName&quot;,
+  &quot;bSortAscending&quot;: false,
+  &quot;nSearchResultPageCount&quot;: 8
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/Search</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">4974</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[16]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>2059.6</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">4119.2</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/TypeAhead" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningKey&quot;: -1,
+  &quot;sTopBoxID&quot;: &quot;21002&quot;,
+  &quot;sViewID&quot;: &quot;0&quot;,
+  &quot;sCriteria&quot;: &quot;Hunter&quot;,
+  &quot;sFieldID&quot;: &quot;FullName&quot;,
+  &quot;sCachedSearchID&quot;: &quot;&quot;,
+  &quot;sCompareType&quot;: &quot;AnyPartField&quot;,
+  &quot;bIsDefaultSearch&quot;: false,
+  &quot;oFieldCriteriaList&quot;: {
+    &quot;Data&quot;: [
+      {
+        &quot;FieldDefID&quot;: &quot;FullName&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;JobTitle&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;1E33975E-DD66-44D6-ADE4-ACCD83D266A3&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;483254A4-46C9-4C5F-BF39-8DAEAE86251D&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;9D25A71A-3A96-437F-BAE9-D585D059169B&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;92A002F3-D996-4B2D-8809-3E7C4E2BA880&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;67C32BA2-3AE9-4B3B-9775-4FD59B36EA76&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;F3F175B7-3A0D-4C20-8A1B-835F53451463&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;9E1A1769-DF32-44C6-B7DE-5FB35284A50B&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;161F99E4-2F32-4954-A6ED-A5FE842A0EAB&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;F4BFFF7B-D9FC-4FDC-912D-C92D883916B8&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;2B43C981-7492-4AEC-BF73-5AA5D0ACB821&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      },
+      {
+        &quot;FieldDefID&quot;: &quot;6B7EA60B-AFA0-44BD-96C5-2226C91BE1DF&quot;,
+        &quot;CriteriaItems&quot;: [],
+        &quot;ComparisonType&quot;: &quot;Equal&quot;
+      }
+    ]
+  }
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/TypeAhead</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">2825</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[17]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>2792.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">5584.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/Search" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sViewID&quot;: &quot;0&quot;,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;sCurrentTopBoxID&quot;: &quot;21002&quot;,
+  &quot;oSearchCriteria&quot;: {
+    &quot;FieldCriteriaList&quot;: {
+      &quot;Data&quot;: [
+        {
+          &quot;FieldDefID&quot;: &quot;FullName&quot;,
+          &quot;CriteriaItems&quot;: [
+            {
+              &quot;TestValue&quot;: &quot;Hunter&quot;,
+              &quot;LowerValue&quot;: &quot;&quot;,
+              &quot;UpperValue&quot;: &quot;&quot;,
+              &quot;ComparisonType&quot;: &quot;AnyPartField&quot;,
+              &quot;Options&quot;: {}
+            }
+          ],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;JobTitle&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        }
+      ]
+    },
+    &quot;FilterCriteriaList&quot;: [],
+    &quot;SearchColumns&quot;: [
+      {
+        &quot;FieldDefinitionID&quot;: &quot;FullName&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;JobTitle&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;1E33975E-DD66-44D6-ADE4-ACCD83D266A3&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;483254A4-46C9-4C5F-BF39-8DAEAE86251D&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;9D25A71A-3A96-437F-BAE9-D585D059169B&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;92A002F3-D996-4B2D-8809-3E7C4E2BA880&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;67C32BA2-3AE9-4B3B-9775-4FD59B36EA76&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;F3F175B7-3A0D-4C20-8A1B-835F53451463&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;9E1A1769-DF32-44C6-B7DE-5FB35284A50B&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;161F99E4-2F32-4954-A6ED-A5FE842A0EAB&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;F4BFFF7B-D9FC-4FDC-912D-C92D883916B8&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;2B43C981-7492-4AEC-BF73-5AA5D0ACB821&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;6B7EA60B-AFA0-44BD-96C5-2226C91BE1DF&quot;,
+        &quot;Width&quot;: 80
+      }
+    ],
+    &quot;Name&quot;: &quot;&quot;
+  },
+  &quot;sPageNumber&quot;: 0,
+  &quot;sSortFieldID&quot;: &quot;FullName&quot;,
+  &quot;bSortAscending&quot;: false,
+  &quot;nSearchResultPageCount&quot;: 3
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/Search</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">3517</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[18]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>436.8</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">873.6</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/Search" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sViewID&quot;: &quot;0&quot;,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;sCurrentTopBoxID&quot;: &quot;21002&quot;,
+  &quot;oSearchCriteria&quot;: {
+    &quot;FieldCriteriaList&quot;: {
+      &quot;Data&quot;: [
+        {
+          &quot;FieldDefID&quot;: &quot;FullName&quot;,
+          &quot;CriteriaItems&quot;: [
+            {
+              &quot;TestValue&quot;: &quot;Hunter&quot;,
+              &quot;LowerValue&quot;: &quot;&quot;,
+              &quot;UpperValue&quot;: &quot;&quot;,
+              &quot;ComparisonType&quot;: &quot;AnyPartField&quot;,
+              &quot;Options&quot;: {}
+            }
+          ],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;JobTitle&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        }
+      ]
+    },
+    &quot;FilterCriteriaList&quot;: [],
+    &quot;SearchColumns&quot;: [
+      {
+        &quot;FieldDefinitionID&quot;: &quot;FullName&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;JobTitle&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;1E33975E-DD66-44D6-ADE4-ACCD83D266A3&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;483254A4-46C9-4C5F-BF39-8DAEAE86251D&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;9D25A71A-3A96-437F-BAE9-D585D059169B&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;92A002F3-D996-4B2D-8809-3E7C4E2BA880&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;67C32BA2-3AE9-4B3B-9775-4FD59B36EA76&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;F3F175B7-3A0D-4C20-8A1B-835F53451463&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;9E1A1769-DF32-44C6-B7DE-5FB35284A50B&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;161F99E4-2F32-4954-A6ED-A5FE842A0EAB&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;F4BFFF7B-D9FC-4FDC-912D-C92D883916B8&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;2B43C981-7492-4AEC-BF73-5AA5D0ACB821&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;6B7EA60B-AFA0-44BD-96C5-2226C91BE1DF&quot;,
+        &quot;Width&quot;: 80
+      }
+    ],
+    &quot;Name&quot;: &quot;&quot;
+  },
+  &quot;sPageNumber&quot;: 0,
+  &quot;sSortFieldID&quot;: &quot;FullName&quot;,
+  &quot;bSortAscending&quot;: false,
+  &quot;nSearchResultPageCount&quot;: 3
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/Search</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">3517</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[19]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>1228.8000000000002</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">2457.6000000000004</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/Search" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sViewID&quot;: &quot;0&quot;,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;sCurrentTopBoxID&quot;: &quot;21002&quot;,
+  &quot;oSearchCriteria&quot;: {
+    &quot;FieldCriteriaList&quot;: {
+      &quot;Data&quot;: [
+        {
+          &quot;FieldDefID&quot;: &quot;FullName&quot;,
+          &quot;CriteriaItems&quot;: [
+            {
+              &quot;TestValue&quot;: &quot;Hunter&quot;,
+              &quot;LowerValue&quot;: &quot;&quot;,
+              &quot;UpperValue&quot;: &quot;&quot;,
+              &quot;ComparisonType&quot;: &quot;AnyPartField&quot;,
+              &quot;Options&quot;: {}
+            }
+          ],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;JobTitle&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+          &quot;CriteriaItems&quot;: [],
+          &quot;ComparisonType&quot;: &quot;AnyPartField&quot;
+        },
+        {
+          &quot;FieldDefID&quot;: &quot;F4BFFF7B-D9FC-4FDC-912D-C92D883916B8&quot;,
+          &quot;CriteriaItems&quot;: [
+            {
+              &quot;TestValue&quot;: &quot;4&quot;,
+              &quot;LowerValue&quot;: &quot;&quot;,
+              &quot;UpperValue&quot;: &quot;&quot;,
+              &quot;ComparisonType&quot;: &quot;LessThan&quot;,
+              &quot;Options&quot;: {}
+            }
+          ],
+          &quot;ComparisonType&quot;: &quot;LessThan&quot;
+        }
+      ]
+    },
+    &quot;FilterCriteriaList&quot;: [],
+    &quot;SearchColumns&quot;: [
+      {
+        &quot;FieldDefinitionID&quot;: &quot;FullName&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;JobTitle&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;E8F3891D-55FA-4C2F-9C5F-2E0FB3E8152F&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;71D9A883-F5FC-4B60-B0E6-E5C9872B196C&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;FB827D3C-BCD3-4719-83D4-D5F9603C1341&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;1E33975E-DD66-44D6-ADE4-ACCD83D266A3&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;CC7C30FA-816F-45ED-89FB-2D680695442F&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;483254A4-46C9-4C5F-BF39-8DAEAE86251D&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;8D22A39F-1E44-49B1-B3F4-ADDE3FEA32C0&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;9D25A71A-3A96-437F-BAE9-D585D059169B&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;92A002F3-D996-4B2D-8809-3E7C4E2BA880&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;67C32BA2-3AE9-4B3B-9775-4FD59B36EA76&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;F3F175B7-3A0D-4C20-8A1B-835F53451463&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;9E1A1769-DF32-44C6-B7DE-5FB35284A50B&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;161F99E4-2F32-4954-A6ED-A5FE842A0EAB&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;F4BFFF7B-D9FC-4FDC-912D-C92D883916B8&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;2B43C981-7492-4AEC-BF73-5AA5D0ACB821&quot;,
+        &quot;Width&quot;: 80
+      },
+      {
+        &quot;FieldDefinitionID&quot;: &quot;6B7EA60B-AFA0-44BD-96C5-2226C91BE1DF&quot;,
+        &quot;Width&quot;: 80
+      }
+    ],
+    &quot;Name&quot;: &quot;&quot;
+  },
+  &quot;sPageNumber&quot;: 0,
+  &quot;sSortFieldID&quot;: &quot;FullName&quot;,
+  &quot;bSortAscending&quot;: false,
+  &quot;nSearchResultPageCount&quot;: 3
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/Search</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">3879</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[20]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>3240.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">6480.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/GetChartData" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;oBoxIDs&quot;: [
+    &quot;21009&quot;
+  ],
+  &quot;oGroupIDs&quot;: [
+    &quot;11&quot;,
+    &quot;36&quot;
+  ],
+  &quot;iLevels&quot;: 2,
+  &quot;bHighlightFilter&quot;: false,
+  &quot;bGetParentOfPartner&quot;: true,
+  &quot;bShowChainOfCommand&quot;: false
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/GetChartData</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">257</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[21]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>1846.0</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">3692.0</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure//Chart/GetChartData" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.value">{
+  &quot;sChartName&quot;: &quot;1&quot;,
+  &quot;nPlanningChartKey&quot;: -1,
+  &quot;sSecurityViewID&quot;: &quot;0&quot;,
+  &quot;oBoxIDs&quot;: [
+    &quot;21009&quot;
+  ],
+  &quot;oGroupIDs&quot;: [
+    &quot;11&quot;,
+    &quot;36&quot;
+  ],
+  &quot;iLevels&quot;: 3,
+  &quot;bHighlightFilter&quot;: false,
+  &quot;bGetParentOfPartner&quot;: true,
+  &quot;bShowChainOfCommand&quot;: false
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure//Chart/GetChartData</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="content-type" elementType="Header">
+                <stringProp name="Header.name">content-type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">application/json, text/plain, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">257</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[22]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>1755.6000000000001</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">3511.2000000000003</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/adhocReport" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.domain">rdcou1web28.hosting.aqdom.com</stringProp>
+          <intProp name="HTTPSampler.port">0</intProp>
+          <stringProp name="HTTPSampler.path">Unsecure/Chart/adhocReport</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <elementProp name="HTTPSampler.header_manager" elementType="HeaderManager" guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="Accept" elementType="Header">
+                <stringProp name="Header.name">Accept</stringProp>
+                <stringProp name="Header.value">text/html, application/xhtml+xml, image/jxr, */*</stringProp>
+              </elementProp>
+              <elementProp name="Referer" elementType="Header">
+                <stringProp name="Header.name">Referer</stringProp>
+                <stringProp name="Header.value">http://rdcou1web28.hosting.aqdom.com/Unsecure/Chart/LoadChart/1</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Language" elementType="Header">
+                <stringProp name="Header.name">Accept-Language</stringProp>
+                <stringProp name="Header.value">en-US</stringProp>
+              </elementProp>
+              <elementProp name="User-Agent" elementType="Header">
+                <stringProp name="Header.name">User-Agent</stringProp>
+                <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko</stringProp>
+              </elementProp>
+              <elementProp name="Content-Type" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/x-www-form-urlencoded</stringProp>
+              </elementProp>
+              <elementProp name="Accept-Encoding" elementType="Header">
+                <stringProp name="Header.name">Accept-Encoding</stringProp>
+                <stringProp name="Header.value">gzip, deflate</stringProp>
+              </elementProp>
+              <elementProp name="Content-Length" elementType="Header">
+                <stringProp name="Header.name">Content-Length</stringProp>
+                <stringProp name="Header.value">1366572</stringProp>
+              </elementProp>
+              <elementProp name="Host" elementType="Header">
+                <stringProp name="Header.name">Host</stringProp>
+                <stringProp name="Header.value">rdcou1web28.hosting.aqdom.com</stringProp>
+              </elementProp>
+              <elementProp name="Connection" elementType="Header">
+                <stringProp name="Header.name">Connection</stringProp>
+                <stringProp name="Header.value">Keep-Alive</stringProp>
+              </elementProp>
+              <elementProp name="Pragma" elementType="Header">
+                <stringProp name="Header.name">Pragma</stringProp>
+                <stringProp name="Header.value">no-cache</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header manager" enabled="true">
+            <collectionProp reference="../../../HTTPSamplerProxy[23]/elementProp[2]/collectionProp"/>
+          </HeaderManager>
+          <hashTree/>
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
+            <doubleProp>
+              <name>RandomTimer.range</name>
+              <value>9895.2</value>
+              <savedValue>0.0</savedValue>
+            </doubleProp>
+            <stringProp name="ConstantTimer.delay">19790.4</stringProp>
+          </UniformRandomTimer>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
